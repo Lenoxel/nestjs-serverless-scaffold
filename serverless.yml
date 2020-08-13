@@ -1,0 +1,41 @@
+service: bet-bee-ticket
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: us-west-2
+  stage: ${opt:stage, 'dev'}
+
+plugins:
+  - '@hewmen/serverless-plugin-typescript'
+  - serverless-offline
+  - serverless-dotenv-plugin
+  - serverless-plugin-optimize
+
+package:
+  exclude:
+    - .git/**
+    - src/**
+    - test/**
+    - e2e/**
+    - nodemon.json
+    - README.md
+    - jest-diff/**
+    - pretty-format/**
+  individually: true
+
+custom:
+  stages:
+    - dev
+    - prod
+
+functions:
+  ticket:
+    handler: src/index.handler
+    events:
+    - http:
+        method: any
+        path: /{any+}
+        cors: true
+        authorizer:
+          arn: arn:aws:cognito-idp:us-west-2:441326082739:userpool/us-west-2_rpfhDu9dW
