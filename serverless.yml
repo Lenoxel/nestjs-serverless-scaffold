@@ -1,4 +1,4 @@
-service: bet-bee-ticket
+service: scaffold-nestjs-serverless
 
 provider:
   name: aws

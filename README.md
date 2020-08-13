@@ -23,7 +23,7 @@ $ npm start
 ```
 $ npm start
 
-> bet-bee-ticket@0.0.1 start C:\Codes\js_codes\bet-bee\microservices\bet-bee-ticket
+> scaffold-nestjs-serverless@0.0.1 start C:\Codes\js_codes\scaffold-nestjs-serverless
 > nest start
 
 [Nest] 13340   - 2020-08-13 13:04:31   [NestFactory] Starting Nest application...
@@ -65,7 +65,7 @@ $ npm run start:swager
 ```
 
 ```
-> bet-bee-ticket@0.0.1 start:swagger C:\Codes\js_codes\bet-bee\microservices\bet-bee-ticket
+> scaffold-nestjs-serverless@0.0.1 start:swagger C:\Codes\js_codes\scaffold-nestjs-serverless
 > npx ts-node src/swagger.ts
 
 [Nest] 8908   - 2020-08-13 13:10:02   [NestFactory] Starting Nest application...
