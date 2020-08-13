@@ -1,8 +1,8 @@
-# Base Project - Nest.js | Serverless
+# Projeto Base - Nest.js | Serverless
 Esse é o projeto base para iniciar com Nest.js e Serverless Framework
 
 ## Como usar
-### Prepare
+### Preparação
 
 ```
 Caso ainda não tenha instalado: $ npm install @nestjs/cli serverless -g
@@ -13,7 +13,7 @@ $ npm install
 $ npm start
 ```
 
-### Development
+### Desenvolvimento
 #### Usando o NestCLI
 
 ```
@@ -36,7 +36,7 @@ $ npm start
 Acesse o projeto por - http://localhost:3000
 
 #### Usando o serverless-offline
-__Depois de rodar o comando: `npm run build`__
+__Antes, rode o comando: `npm run build`__
 
 ```bash
 $ sls offline
@@ -58,7 +58,7 @@ offline: [HTTP] server ready: http://localhost:3000
 
 Acesse o projeto por - http://localhost:3000
 
-### Usando o Swagger para desenvolvimento
+#### Usando o Swagger para desenvolvimento
 
 ```
 $ npm run start:swager
